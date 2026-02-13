@@ -158,7 +158,7 @@
                   
                   <!-- About Text -->
                   <div class="col-md-12  text-muted">
-                    Adaptive Web Developer with 3+ years experience in PHP, Laravel. Proficient in HTML,
+                    Adaptive Web Developer with <span class="experience"></span> + years experience in PHP, Laravel. Proficient in HTML,
                      CSS, Bootstrap, JavaScript, and jQuery for responsive web application. Skilled in unit testing,
                       and debugging for code quality. Eager to embrace new tech, delivering 
                       high-quality solutions. Committed to innovation and excellence in software development.
@@ -346,6 +346,8 @@
     $(document).ready(function(){
       let exp = calculateYears();
       $('#experience').html(`${exp}+ Years`);
+      $('.experience').html(`${exp}`);
+    
 
 
    
